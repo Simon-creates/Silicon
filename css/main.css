@@ -32,11 +32,13 @@ h1,h2,h3,h4,h5 {
     padding-right: 1rem;
 }
 .Silicon-header {
+    background-color: #ffffff;
 
     .header-area{
        display: flex;
        justify-content: space-between;
        align-items: center;
+       flex-wrap: wrap;
        
        .actions {
         display:flex;
@@ -45,8 +47,6 @@ h1,h2,h3,h4,h5 {
         gap: 2rem;
        }
     }
-   
-  background-color: #ffffff;
     
 }
 
@@ -70,6 +70,10 @@ h1,h2,h3,h4,h5 {
     padding-left: 0;
 }
 
+.img {
+    width: 100%;
+    height: auto;
+}
 
 .header-button {
     display: flex;
@@ -87,8 +91,65 @@ h1,h2,h3,h4,h5 {
     }
     
 }
+.hero{
+    background: #FFFFFF;
+    background: linear-gradient(175deg, rgba(255, 255, 255, 0.07) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(99, 102, 241, 0.07) 83%);
+    padding-top: 5rem;
 
+    .hero-area{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
 
+        @media (width >=768px) {
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            text-align: left;
 
+        }
+        
+        .hero.content{
+            
+
+        }
+        .hero.image{
+            
+            
+        }
+    }
+       
+}
+@media (max-width: 767px) {
+    .header-dark-mode{
+        display: none;
+    }
+    .switch{
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+  .header-area {
+    flex-wrap: nowrap;
+  }
+
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .logotype {
+    width: 30px;
+  }
+  
+}
+
+@media (min-width: 1320px) {
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
 
 
