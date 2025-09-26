@@ -292,7 +292,60 @@ h1,h2,h3,h4,h5 {
 .subscribe-right-column{
     display: flex;
     align-items: center;
+    
+}
+.form-subscribe{
+    display: flex;
+    flex-direction: row;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;      
+    font-size: 1rem;
+    .input-wrapper {
+  position: relative;
+  width: 100%;
+}
 
+.input-wrapper img {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%); /*Här har Copilot hjälpt mig med lösning*/
+  width: 8%;
+  height: auto;  
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 8px 8px 8px 40px;  
+}
+
+    
+    .form-group{
+        display: flex;
+        align-items: center;        
+    }
+    label {
+        font-size: 1rem;        
+    }
+    input{
+        font-size: 1rem;
+        padding: 8px;
+        border: 1px solid #b3b3b3ba;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px; 
+            
+    }
+    .submit-button{
+        background-color: #6366F1;
+        color: white;
+        padding: 10px 20px;  
+        border: none;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        cursor: pointer;
+    }
+    
 }
 
 
