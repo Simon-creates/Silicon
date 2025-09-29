@@ -132,7 +132,8 @@ h1,h2,h3,h4,h5 {
 .hero-image img{
     max-width: 100%;
     height: auto;
-    padding-left: none;                   
+    padding-left: none;
+    display: none;                   
 }       
 
 .logos{
@@ -235,15 +236,12 @@ h1,h2,h3,h4,h5 {
     
 }
 .how-iphones-area{
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-    align-items: center;
     display: none;   
   
 }
 .how-iphones-area img{
-    max-width: 100%;
+    flex: 1 1 30%;
+    max-width: 30%;
     height: auto;
     
 }
@@ -256,6 +254,16 @@ h1,h2,h3,h4,h5 {
     padding-bottom: 4rem; 
     max-width: 500px;
     margin: 0 auto; 
+}
+.how-content-tablet{
+     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 3rem;    
+    padding-bottom: 4rem; 
+    max-width: 700px;
+    margin: 0 auto; 
+    display:none;
 }
 .how-content-desktop{
     display: none;
@@ -406,17 +414,30 @@ h1,h2,h3,h4,h5 {
 
 @media (min-width: 768px) {
     .header-dark-mode{
-        display: none;
+        display: block;
     }
     .switch{
-        display: none;
+        display: block;
     }
+    .hero-image img{
+    max-width: 100%;
+    height: auto;
+    padding-left: none;
+    display: flex;                   
+} 
+
    .features-area {
     grid-template-columns: 1fr 2fr;
     text-align: left;    
   }
   .how-iphones-area{
     display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
   }
   .how-iphone-area{
     display: none;
@@ -424,8 +445,11 @@ h1,h2,h3,h4,h5 {
   .how-content-mobile{
     display: none;    
 }
-.how-content-desktop{
+ .how-content-tablet{
     display: flex;
+}
+.how-content-desktop{
+    display: none;
 }
 .subscribe-left-column-tablet{
     display: flex;
@@ -472,9 +496,7 @@ h1,h2,h3,h4,h5 {
     gap: 3rem;
     text-align: left;
   }  
-   .header-dark-mode{
-        display: block;
-    }
+   
     .switch{
         display: block;
     }  
@@ -482,6 +504,13 @@ h1,h2,h3,h4,h5 {
  .logos{
     display: block;
  }
+ .how-content-tablet{
+    display:none;
+}
+.how-content-desktop{
+    display: flex;
+}
+
   .subscribe-left-column-mobile{
     display: none;
 }
