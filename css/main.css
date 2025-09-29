@@ -30,6 +30,8 @@ h1,h2,h3,h4,h5 {
     margin-right:auto;
     padding-left: 1rem;
     padding-right: 1rem;
+    box-sizing: border-box
+    
 }
 .Silicon-header {
     background-color: #ffffff;
@@ -271,27 +273,41 @@ h1,h2,h3,h4,h5 {
 .how-paragraph-desktop{
     padding-top: 1rem;
 }
+
 .subscribe-area{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    background-color: #F3F6FF;
-    margin-top: 3rem;
-    padding: 1rem;        
-}
-.subscribe-left-column-desktop{
-    display: none;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    justify-content: center;
+    
+      
 }
 .subscribe-left-column-mobile{
     display: flex;
     align-items: center;
     gap: 1rem;
 }
+.subscribe-left-column-desktop{
+    display: none;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.subscribe-left-column-desktop img{
+    max-width: 100%;
+    max-height: auto;
+    padding-left: 3rem;
+}
+.subscribe-left-column-tablet{
+    display: none;
+}
+
 .subscribe-right-column{
     display: flex;
     align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     
 }
 .form-subscribe{
@@ -302,17 +318,17 @@ h1,h2,h3,h4,h5 {
     padding: 1rem;      
     font-size: 1rem;
     .input-wrapper {
-  position: relative;
-  width: 100%;
+    position: relative;
+    width: 100%;
 }
 
 .input-wrapper img {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%); /*Här har Copilot hjälpt mig med lösning*/
-  width: 8%;
-  height: auto;  
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%); /*Här har Copilot hjälpt mig med lösning*/
+    width: 8%;
+    height: auto;  
 }
 
 .input-wrapper input {
@@ -372,7 +388,17 @@ h1,h2,h3,h4,h5 {
    .features-mobile {
     display: none;
   }
-  .subscribe-left-column-desktop{
+  .subscribe-area{
+    background-color: #F3F6FF;
+    margin-top: 3rem;
+    padding: 1rem;  
+    border-radius: 3%;      
+}
+.subscribe-title-mobile{
+    font-size: 40px;
+    max-width: 400px;
+}
+.subscribe-left-column-desktop{
     display: none;    
 }
       
@@ -401,8 +427,28 @@ h1,h2,h3,h4,h5 {
 .how-content-desktop{
     display: flex;
 }
+.subscribe-left-column-tablet{
+    display: flex;
+    align-items: center;    
+}
+.subscribe-title-tablet{
+    font-size: 30px;
+    max-width: 400px;
+    padding-left: 2rem;
+}
+  .subscribe-left-column-mobile{
+    display: none;
+}
   .subscribe-left-column-desktop{
     display: none;    
+}
+.subscribe-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background-color: #F3F6FF;
+    margin-top: 3rem;
+    padding: 1rem;        
 }
     
 }
@@ -437,6 +483,9 @@ h1,h2,h3,h4,h5 {
     display: block;
  }
   .subscribe-left-column-mobile{
+    display: none;
+}
+.subscribe-left-column-tablet{
     display: none;
 }
  .subscribe-left-column-desktop{
