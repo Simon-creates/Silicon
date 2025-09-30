@@ -76,21 +76,24 @@ h1,h2,h3,h4,h5 {
     width: 100%;
     height: auto;
 }
+.header-button-hamburger {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.header-button-hamburger span {
+  display: block;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+}
 
 .header-button {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 8px 16px;
-    background-color: #6366F1;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: "Manrope", sans-serif;
-    &:hover{
-        text-decoration: underline;
-    }    
+    display: none;    
 }
 .hero{
     background: #FFFFFF;
@@ -355,11 +358,14 @@ h1,h2,h3,h4,h5 {
     input{
         font-size: 1rem;
         padding: 8px;
-        border: 1px solid #b3b3b3ba;
+        border: 1px solid #b4b4b45b;
         border-top-left-radius: 7px;
-        border-bottom-left-radius: 7px; 
-            
+        border-bottom-left-radius: 7px;             
     }
+   input::placeholder{
+    color: #b1b1b1bc;
+   }
+
     .submit-button{
         background-color: #6366F1;
         color: white;
@@ -385,10 +391,7 @@ h1,h2,h3,h4,h5 {
     .header-dark-mode{
         display: none;
     }
-    .switch{
-        display: none;
-    }
-   .grid-item {
+ .grid-item {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -416,9 +419,7 @@ h1,h2,h3,h4,h5 {
     .header-dark-mode{
         display: block;
     }
-    .switch{
-        display: block;
-    }
+    
     .hero-image img{
     max-width: 100%;
     height: auto;
@@ -490,6 +491,25 @@ h1,h2,h3,h4,h5 {
   .logotype {
     width: 30px;
   }
+  .header-button-hamburger{
+    display: none;
+  }
+
+  .header-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px;
+    background-color: #6366F1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Manrope", sans-serif;
+    &:hover{
+        text-decoration: underline;
+    }    
+}
   .hero-area {
     display: grid;
     grid-template-columns: 1fr 1fr;
