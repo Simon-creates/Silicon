@@ -369,7 +369,7 @@ h1,h2,h3,h4,h5 {
         border-bottom-left-radius: 7px;             
     }
    input::placeholder{
-    color: #b1b1b1bc;
+    color: #B4B7C9;
    }
 
     .submit-button{
@@ -389,6 +389,7 @@ h1,h2,h3,h4,h5 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #9397AD;
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
